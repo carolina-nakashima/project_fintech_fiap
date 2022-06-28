@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!--CSS-->
+    <link rel="stylesheet" href="home.css" />
+
+    <!--Feather icons-->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <title>Home</title>
+</head>
+<body class="text-center bg-success bg-opacity-50">
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 fw-bold text-success" href="home.html">
+            <img src="image/piggy-bank.png" alt="" width="40">
+        </a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search" aria-label="Search">
+        <div class="navbar-nav">
+          <div class="nav-item text-nowrap">
+            <a class="nav-link px-3" href="login.html">Logout</a>
+          </div>
+        </div>
+      </header>
+
+    <div class="container-fluid">
+        <div class="row">
+          <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark bg-gradient sidebar collapse">
+            <div class="position-sticky pt-4">
+              <ul class="nav flex-column">
+                <li class="nav-item pt-4">
+                    <a class="nav-link active" aria-current="page" href="#">
+                            <i data-feather="user" class="text-light"></i>
+                            <p class="mt-3 text-light">Olá, usuário!</p>
+                    </a>
+                  </li>
+                <li class="nav-item pt-3">
+                  <a class="nav-link active text-light" aria-current="page" href="home.html">
+                    <i data-feather="home" class="text-info"></i>  Dashboard
+                  </a>
+                </li>
+                <li class="nav-item pt-4">
+                  <a class="nav-link text-light" href="#">
+                    <i data-feather="arrow-up" class="text-success"></i>
+                    Recebimentos
+                  </a>
+                </li>
+                <li class="nav-item pt-4">
+                  <a class="nav-link text-light" href="#">
+                    <i data-feather="arrow-down" class="text-danger"></i>
+                    Gastos
+                  </a>
+                </li>
+                <li class="nav-item pt-4">
+                  <a class="nav-link text-light" href="#">
+                    <i data-feather="dollar-sign" class="text-warning"></i>
+                    Investimentos
+                  </a>
+                </li>
+              </ul>
+          </nav>
+    
+          <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 ms-2 border-bottom">
+              <h1 class="h2">Dashboard</h1>
+              <div class="btn-toolbar mb-2 mb-md-0">
+                <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle text-dark">
+                  <span data-feather="calendar" class="align-text-bottom"></span>
+                  Mês Atual
+                </button>
+              </div>
+            </div>
+
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2">
+                    <div class="col">
+                      <div class="card shadow-sm mb-2">           
+                        <div class="card-body">
+                          <h4>Total Recebimentos</h4>
+                          <p class="fs-5"><i data-feather="arrow-up" class="text-success"></i> R$ 10.500,00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm mb-2">           
+                          <div class="card-body">
+                            <h4>Total Gastos</h4>
+                            <p class="fs-5"><i data-feather="arrow-down" class="text-danger"></i> R$ 7.255,00</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card shadow-sm mb-2">           
+                          <div class="card-body">
+                            <h4>Total Investimentos</h4>
+                            <p class="fs-5"><i data-feather="dollar-sign" class="text-warning"></i> R$ 127.980,00</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card shadow-sm mb-2">           
+                          <div class="card-body">
+                            <h4>Saldo</h4>
+                            <p class="fs-5"><i data-feather="activity" class="text-info"></i> R$ 3.245,00</p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+            
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 mt-3 ms-2 border-bottom">
+                <h1 class="h2">Últimas Movimentações</h1>
+                <div class="btn-toolbar mb-2 mb-md-0">
+                </div>
+              </div>
+
+            <div class="table-responsive">
+              <table class="table table-striped table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">Data</th>
+                    <th scope="col">Categoria</th>
+                    <th scope="col">Movimentação</th>
+                    <th scope="col">Valor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>25/06/2022</td>
+                    <td>Transporte</td>
+                    <td>Compra no crédito</td>
+                    <td>R$ 24,30</td>
+                  </tr>
+                  <tr>
+                    <td>25/06/2022</td>
+                    <td>Farmácia</td>
+                    <td>Compra no débito</td>
+                    <td>R$ 10,50</td>
+                  </tr>
+                  <tr>
+                    <td>25/06/2022</td>
+                    <td>Transporte</td>
+                    <td>Compra no crédito</td>
+                    <td>R$ 7,50</td>
+                  </tr>
+                  <tr>
+                    <td>25/06/2022</td>
+                    <td>Mercado</td>
+                    <td>Compra no dinheiro</td>
+                    <td>R$ 98,00</td>
+                  </tr>
+                  <tr>
+                    <td>25/06/2022</td>
+                    <td>Investimento</td>
+                    <td>Transferência</td>
+                    <td>R$ 210,00</td>
+                  </tr>
+                  <tr>
+                    <td>25/06/2022</td>
+                    <td>Transporte</td>
+                    <td>Compra no crédito</td>
+                    <td>R$ 25,10</td>
+                  </tr>
+                  <tr>
+                    <td>24/06/2022</td>
+                    <td>Alimentação</td>
+                    <td>Compra no crédito</td>
+                    <td>R$ 5,50</td>
+                  </tr>
+                  <tr>
+                    <td>25/06/2022</td>
+                    <td>Investimento</td>
+                    <td>Transferência</td>
+                    <td>R$ 210,00</td>
+                  </tr>
+                  <tr>
+                    <td>25/06/2022</td>
+                    <td>Transporte</td>
+                    <td>Compra no crédito</td>
+                    <td>R$ 25,10</td>
+                  </tr>
+                  <tr>
+                    <td>24/06/2022</td>
+                    <td>Alimentação</td>
+                    <td>Compra no crédito</td>
+                    <td>R$ 5,50</td>
+                  </tr>
+               </tbody>
+              </table>
+            </div>
+          </main>
+
+          <div class="container bg-dark">
+            <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+              <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <img src="image/piggy-bank.png" alt="" width="30">
+                </a>
+                <span class="mb-3 mb-md-0 text-light">&copy; 2022 Company, Inc</span>
+              </div>
+          
+              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-light" href="https://www.facebook.com/login/" target="_blank"><i data-feather="facebook"></i></a></li>
+                <li class="ms-3"><a class="text-light" href="https://www.instagram.com/accounts/login/" target="_blank"><i data-feather="instagram"></i></a></li>
+              </ul>
+            </footer>
+          </div>
+   <!--Bootstrap-->
+   <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+   crossorigin="anonymous"></script>
+
+   <!--Feather icons-->
+   <script>
+    feather.replace()
+</script>
+</body>
+</html>
